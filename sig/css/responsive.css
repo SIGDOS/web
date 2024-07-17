@@ -1,0 +1,123 @@
+@media only screen and (min-width: 950px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 15rem repeat(4, 1fr);
+        grid-template-rows: 50px 55px repeat(4, 1fr) 30px;
+    }
+
+    .contenedor-header{
+        grid-column: 1 / span 5;
+        grid-row: 1 / span 1;
+
+        display: grid;
+        grid-template-columns: 15rem repeat(4, 1fr);
+    }
+
+    .header-tittle{
+        display: flex;
+        justify-content: center;
+        grid-column: 1 / span 1;
+    }
+
+    .header-opcion{
+        grid-column: 2 / span 4;
+        justify-content: end;
+    }
+
+    .header-opcion > button{
+        display: none;
+    }
+
+    .list{
+        display: none;
+    }
+
+    .perfil{
+        display: flex;
+    }
+
+    .opcion{
+        display: flex;
+    }
+    
+    .fade:not(.show) {
+        opacity: 2;
+    }
+
+    #modal-menu{
+        background-color: #0a03cd;
+        display: block !important;
+        position: relative;
+        padding: 0;
+        width: 15rem;
+        height: auto;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 5;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .menu-cont{
+        width: 102%;
+        margin-top: 45px;
+    }
+
+    .cont-menu{
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .nav_menu{
+        width: 100%;
+        height: 100%;
+    }
+
+    .header_modal-menu{
+        display: none;
+    }
+
+    .seg_header{
+        grid-column: 2 / span 4;
+        grid-row: 2 / span 1;
+    }
+
+    .contenedor_main{
+        height: auto;
+        grid-column: 2 / span 4;
+        grid-row: 3 / span 4;
+    }
+    .contenido{
+        width: 97%;
+        height: 95%;
+        margin: 0 auto;
+    }
+
+    .container_table{
+        width: 100%;
+    }
+
+    .contenedor_footer{
+        grid-column: 1 / span 5;
+        grid-row: 7 / span 1;
+        height: 30px;
+    }
+
+    #boton_add div:first-child {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    #boton_add div:last-child {
+        width: 50%;
+        justify-content: flex-end;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    #search-input{
+        display: flex !important; 
+        width: 20rem;
+    }
+
+}
